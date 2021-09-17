@@ -1,0 +1,51 @@
+<div class="login">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="register-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>E-mail</label>
+                            <input (input)="getRegisterEmail($event)" class="form-control" type="text"
+                                placeholder="E-mail">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Password</label>
+                            <input (input)="getRegisterPassword($event)" class="form-control" type="text"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="custom-control custom-checkbox">
+                                <input (change)="checkEmailAllowed($event)" type="checkbox" class="custom-control-input"
+                                    id="newaccount">
+                                <label class="custom-control-label" for="newaccount">Inform me about campaigns</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button (click)="register()" class="btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>E-mail</label>
+                            <input (input)="getLoginEmail($event)" class="form-control" type="text"
+                                placeholder="E-mail">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Password</label>
+                            <input (input)="getLoginPassword($event)" class="form-control" type="text"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-md-12">
+                            <button (click)="login()" class="btn">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
